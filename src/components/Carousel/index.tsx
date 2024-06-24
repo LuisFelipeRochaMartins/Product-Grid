@@ -36,7 +36,7 @@ const ImageCarousel = ({imageLinks}: CarouselProps) => {
                     alt='Imagem do Carrossel' 
                     height={360}
                     width={1400}
-                    className="rounded-lg "
+                    className="rounded-lg lg:w-[1400px] sm:w-[400px]"
                   />
                 </CardContent>
               </Card>

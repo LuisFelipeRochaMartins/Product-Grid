@@ -1,6 +1,13 @@
 import Image from "next/image"
 import Product from ".."
-import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "../../ui/dialog"
+import { Dialog, 
+  DialogClose, 
+  DialogContent, 
+  DialogDescription,
+  DialogHeader, 
+  DialogTitle, 
+  DialogTrigger 
+} from "../../ui/dialog"
 import { Truck } from "lucide-react"
 import { Button } from "../../ui/button"
 
@@ -10,13 +17,13 @@ const ProductDialog = () => {
           <DialogTrigger>
             <Product />
           </DialogTrigger>
-            <DialogContent className="flex flex-row flex-nowrap sm:max-w-xl">
+            <DialogContent className="flex flex-row sm:flex-col sm:justify-center flex-nowrap sm:max-w-xl">
               <Image 
                 src='https://m.media-amazon.com/images/I/61s2VDj+tbL._AC_UL480_FMwebp_QL65_.jpg' 
                 alt='Imagem do Produto' 
                 height={250} 
                 width={150} 
-                className="w-1/2"
+                className="w-1/2 self-center"
               />
               <div className="flex flex-col">
                 <DialogHeader>
@@ -30,7 +37,7 @@ const ProductDialog = () => {
                 </h2>
                 <DialogClose asChild>
                   <div className="flex flex-col">
-                    <Button 
+                    <Button
                       className="mt-2 px-auto" 
                       type="button"
                     >

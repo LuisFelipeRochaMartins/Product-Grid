@@ -20,18 +20,26 @@ const NavBar = () => {
         <NavigationMenuLink className="p-2">
           <NavigationMenuList>
             <NavigationMenuItem className="flex flex-row gap-2">
-              <Image src='/logo.png' alt="Logo da Loja" height={40} width={40}/>
+              <Image 
+                src='/logo.png' 
+                alt="Logo da Loja" 
+                height={40} 
+                width={40}  
+              />
               <Input 
                 type="text"
-                className="w-96 px-4"
+                className="sm:w-48 w-96 px-4"
                 placeholder="Encontre o suplemento ideal para você"
               />
-              <Button variant='outline'>
+              <Button 
+                variant='outline'
+                className="sm:w-20"
+              >
                 Enviar
               </Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Introdução</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="sm:hidden">Introdução</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr] bg-gradient-to-b">
                   <li className="row-span-3">
